@@ -1,0 +1,12 @@
+<div id="chatview">
+    <canvas id="canvas" width="600" height="450"></canvas>
+    <img id="image" class="img-responsive"></img>
+    <video id="video" width="160" height="120"></video>
+    <div class="button_container">
+        <button id="startCall" class="btn btn-primary bt" ng-disabled="oncall" ng-click="makeCall()"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></button>
+        <button id="stopCall" class="btn btn-danger bt" ng-disabled="!oncall" ng-click="endCall()"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="accept" class="btn btn-success bt" ng-disabled="!makingcall" ng-click="pickCall()"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+        <button id="reject" class="btn btn-danger bt" ng-disabled="!makingcall" ng-click="denyCall()"><span class="glyphicon glyphicon-remove" aria-hidden="true"></button>
+    </div>
+</div>
