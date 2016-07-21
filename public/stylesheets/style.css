@@ -44,3 +44,10 @@ a {
 .bt{
   border-radius: 50px;
 }
+
+#appname{
+  position: fixed;
+  top: 2em;
+  right: 5em;
+  z-index: 5;
+}
